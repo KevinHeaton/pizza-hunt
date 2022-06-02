@@ -10,12 +10,12 @@ const ReplySchema = new Schema(
     },
     replyBody: {
       type: String,
-      validate: true,
+      required: true,
       trim: true
     },
     writtenBy: {
       type: String,
-      validate: true,
+      required: true,
       tirm: true
     },
     createdAt: {
@@ -34,12 +34,12 @@ const ReplySchema = new Schema(
 const CommentSchema = new Schema({
     writtenBy: {
       type: String,
-      validate: true,
+      required: true,
       trim: true
     },
     commentBody: {
       type: String,
-      validate: true,
+      required: true,
       trim: true
     },
     createdAt: {
