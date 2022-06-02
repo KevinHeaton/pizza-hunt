@@ -34,12 +34,12 @@ const ReplySchema = new Schema(
 const CommentSchema = new Schema({
     writtenBy: {
       type: String,
-      validate: 'You need to provide your name!',
+      validate: true,
       trim: true
     },
     commentBody: {
       type: String,
-      validate: 'You need to provide a comment!',
+      validate: true,
       trim: true
     },
     createdAt: {
