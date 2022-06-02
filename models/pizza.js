@@ -4,12 +4,12 @@ const dateFormat = require('../utils/dateFormat');
 const PizzaSchema = new Schema({
     pizzaName: {
       type: String,
-      required: 'You need to provide a pizza name!',
+      required: true,
       trim: true
     },
     createdBy: {
       type: String,
-      required: 'You need to provide your name!',
+      required: true,
       trim: true
     },
     createdAt: {

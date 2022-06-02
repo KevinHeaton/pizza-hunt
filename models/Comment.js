@@ -10,12 +10,12 @@ const ReplySchema = new Schema(
     },
     replyBody: {
       type: String,
-      validate: 'Your need to put in a reply!',
+      validate: true,
       trim: true
     },
     writtenBy: {
       type: String,
-      validate: 'You need to provide your name!',
+      validate: true,
       tirm: true
     },
     createdAt: {
